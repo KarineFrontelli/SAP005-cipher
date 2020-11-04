@@ -1,0 +1,57 @@
+body {
+    background: #FEDCD2;
+    padding: 5px;
+    border: flex;
+    text-align: center;
+    margin: 5px;
+}
+
+
+#titulo {
+    color: grey; 
+    font-size: large;
+    font-style: italic;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.caixaMensagem{
+
+    margin: 30px;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+
+.botao {
+    border: 2px solid grey;
+    border-radius: 2%;
+    width: flex;
+    margin: 20px;
+    height: 40px;
+    padding: 5px;
+}
+
+.escrevaMensagem {
+
+    border: 2px solid grey;
+    border-radius: 2%;
+    width: flex;
+    margin: 20px;
+    height: 40px;
+    padding: 5px;
+}
+
+#offset {
+    border: 2px solid grey radius 2px;
+    margin: 10px;
+    height: 20px;
+    padding: 5px;
+    
+}
