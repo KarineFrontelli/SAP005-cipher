@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>Papo de salão</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+  <header>
+  <div id="titulo">
+    <h1>Papo de salão</h1>
+  </div>
+  </header>
+
+  <div>
+    <img src="./imagens.jpeg/salaoDebeleza.jpg" alt="Salão de beleza">
+  </div>
+
+  <div>
+    <input type="number" id="offset" size="1" value="1" maxlength="2" />
+  </div>
+
+  <section class="container">
+
+    <div>
+      <div class="caixaMensagem">
+        <form>
+          <textarea id="msg1" placeholder="Escreva aqui a mensagem que deseja cifrar em letras MAIÚSCULAS!"
+            class="escrevaMensagem" type="text"></textarea>
+
+        </form>
+
+        <div class="caixaRespostaMsg1">
+          <form>
+            <textarea id="resultado1" class="msgCriptografada" type="text"></textarea>
+          </form>
+          <button id="criptografe" class="botao" type="button"> criptografe </button>
+        </div>
+      </div>
     </div>
-    <script src="index.js" type="module"></script>
+
+    <div class="caixaMensagem">
+      <form>
+        <textarea id="msg2" placeholder="Escreva aqui a mensagem que deseja decifrar em letras MAIÚSCULAS!"
+          class="escrevaMensagem" type="text"></textarea>
+      </form>
+
+
+      <div class="caixaRespostaMsg2">
+        <form>
+          <textarea id="resultado2" class="msgCriptografada" type="text"></textarea>
+
+          <button id="descriptar" class="botao" type="button"> descriptografe </button>
+        </form>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <script src="index.js" type="module"></script>
+
   </body>
 </html>
