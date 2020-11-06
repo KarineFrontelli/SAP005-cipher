@@ -5,64 +5,64 @@
   <meta charset="utf-8">
   <title>Papo de salão</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon-16x16.png">
 </head>
 
-  <body>
+<body>
 
-  <header>
-  <div id="titulo">
-    <h1>Papo de salão</h1>
-  </div>
+  <header id="titulo">
+    <h1>Papo de Salão</h1>
   </header>
 
-  <div>
-    <img src="./imagens.jpeg/salaoDebeleza.jpg" alt="Salão de beleza">
-  </div>
+  <section>
 
-  <div>
-    <input type="number" id="offset" size="1" value="1" maxlength="2" />
-  </div>
-
-  <section class="container">
+    <h1 id="h2">O que é dito no salão, fica
+      no salão!!!</h1>
 
     <div>
+      <input type="number" id="offset" value="1" max="100" min="1" />
+    </div>
+
+    <div class="container">
       <div class="caixaMensagem">
         <form>
-          <textarea id="msg1" placeholder="Escreva aqui a mensagem que deseja cifrar em letras MAIÚSCULAS!"
-            class="escrevaMensagem" type="text"></textarea>
+          <textarea id="msg1" placeholder="Cifre aqui sua mensagem!" class="escrevaMensagem" type="text"></textarea>
 
         </form>
 
         <div class="caixaRespostaMsg1">
+
+          <button id="criptografe" class="botao" type="button" style="width: 130px; height: 40px"> Clique para cifrar
+          </button>
+        </div>
+      </div>
+
+      <div class="caixaMensagem">
+        <form>
+          <textarea id="msg2" placeholder="Decifre aqui sua mensagem!" class="escrevaMensagem" type="text"></textarea>
+        </form>
+        <div class="caixaRespostaMsg2">
           <form>
-            <textarea id="resultado1" class="msgCriptografada" type="text"></textarea>
+            <button id="decriptar" class="botao" type="button" style="width: 130px; height: 40px"> Clique para
+              decifrar</button>
           </form>
-          <button id="criptografe" class="botao" type="button"> criptografe </button>
         </div>
       </div>
     </div>
 
-    <div class="caixaMensagem">
-      <form>
-        <textarea id="msg2" placeholder="Escreva aqui a mensagem que deseja decifrar em letras MAIÚSCULAS!"
-          class="escrevaMensagem" type="text"></textarea>
-      </form>
-
-
-      <div class="caixaRespostaMsg2">
-        <form>
-          <textarea id="resultado2" class="msgCriptografada" type="text"></textarea>
-
-          <button id="descriptar" class="botao" type="button"> descriptografe </button>
-        </form>
-
-
-      </div>
-
-    </div>
   </section>
 
+  <nav>
+    <footer>
+      <div class="rodape">
+        <img src="imagens/github-10-24.png" alt="Logo github">
+        <a href="https://github.com/KarineFrontelli/SAP005-cipher">Projeto criado por Karine Frontelli</a>
+
+      </div>
+    </footer>
+  </nav>
   <script src="index.js" type="module"></script>
 
-  </body>
+</body>
+
 </html>
